@@ -4,7 +4,7 @@ pokemon ={'Pikachu': 60,
 'nidoran':70,
 'Mewto':140,
 'muk':100}
-while True
+while True:
     print("/nMenu")
     print("1. To add a pokemon")
     print("2. change Hp of a pokemon in pokedex")
@@ -28,3 +28,6 @@ while True
             print('in list. HP  of pokemon is: ',pokemon[name])
         else:
             print('not found')
+    else:
+        print('thank you for searching pokedex')
+        break
