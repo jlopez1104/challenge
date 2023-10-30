@@ -1,9 +1,9 @@
 pokedex={}
-pokemon ={'Pikachu':'60 Hp',
-'charzard':'120 Hp',
-'nidoran':'70 Hp',
-'Mewto':'140 Hp',
-'muk':'100 Hp'}
+pokemon ={'Pikachu': 60,
+'charzard':120,
+'nidoran':70,
+'Mewto':140,
+'muk':100}
 while True
     print("/nMenu")
     print("1. To add a pokemon")
@@ -12,12 +12,19 @@ while True
     print("4. Exit")
     choice = input("please enter in number(1/2/3/4): ")
     if choice == 1:
-
+        name = input('enter pokemon name: ')
+        Hp = int(input('Enter pokemon Hp'))
+        pokemon[name]=Hp
+        print (pokemon)
     elif choice == 2:
-        hp 
+        name = input('enter pokemon name: ')
+        Hp = int(input('Enter pokemon Hp'))
+        pokemon[name]=Hp
+        print (pokemon)
+
     elif choice == 3:
-        n = input('enter a pokemon:')
+        name = input('enter a pokemon:')
         if n in pokemon:
-            print('in list. HP  of pokemon is: ',pokemon[n])
+            print('in list. HP  of pokemon is: ',pokemon[name])
         else:
             print('not found')
